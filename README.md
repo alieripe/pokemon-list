@@ -8,7 +8,7 @@ The PokemonList application displays a listing containing all Pokémon. It has t
 
 * Preparing the environment - Prerequisites:
 
-The prerequisites for the project are: node 6.9.0 or higher and npm 3 or higher
+The prerequisites for the project are: node 10.0.0 or higher and npm 6 or higher
 
 To prepare the environment, run:
 
@@ -54,6 +54,7 @@ After the command finishes running the artifacts to deploy in the / dist directo
 
 * NodeJs - version 11.8.0
 * Angular - version 7.3.0
+* Bootstrap - version 4.2.1
 * TypeScript - version 3.2.2
 * [Angular CLI](https://github.com/angular/angular-cli) - Angular Command Line Interface - version 7.3.0
 * [angular-2-local-storage](https://www.npmjs.com/package/angular-2-local-storage/) - Caching service - version 3.0.0

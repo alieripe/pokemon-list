@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Page } from 'src/app/core/models/page.model';
 import { PaginationComponent } from './pagination.component';
 
 describe('PaginationComponent', () => {
@@ -16,6 +16,7 @@ describe('PaginationComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PaginationComponent);
     component = fixture.componentInstance;
+    component.page = new Page();
     fixture.detectChanges();
   });
 
