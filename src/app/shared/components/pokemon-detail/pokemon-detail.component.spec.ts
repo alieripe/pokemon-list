@@ -19,7 +19,7 @@ describe('PokemonDetailComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PokemonDetailComponent);
     component = fixture.componentInstance;
-    component.pokemon = new Pokemon();
+    component.pokemon = new Pokemon('Pikachu', 1);
     fixture.detectChanges();
   });
 
