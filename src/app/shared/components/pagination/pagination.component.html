@@ -1,0 +1,13 @@
+<nav>
+  <ul class="pagination">
+    <li class="page-item" [ngClass]="{'disabled': page.getNumberPage() <= 1}">
+      <a class="page-link" (click)="prevPage()"><</a>
+    </li>
+    <li class="page-item" [hidden]="itemPage < 1" [ngClass]="{'active': itemPage === page.getNumberPage()}" *ngFor="let itemPage of page.itensPages">
+      <a class="page-link" (click)="goToPage(itemPage)">{{itemPage}}</a>
+    </li>
+    <li class="page-item" [ngClass]="{'disabled': page.getOffset() + page.getLimit() >= page.totalCount}">
+      <a class="page-link" (click)="nextPage()">></a>
+    </li>
+  </ul>
+</nav>

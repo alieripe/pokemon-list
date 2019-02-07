@@ -1,0 +1,59 @@
+<div class="card-detail card d-flex justify-content-center">
+
+  <a class="close" (click)="close.emit()">
+    <fa [name]="'times'"></fa>
+  </a>
+
+  <img class="img-fluid" [src]="pokemon.spriteUrl" />
+
+  <label>
+    <strong>Name:</strong>
+    {{pokemon.name}}
+  </label>
+
+  <label>
+    <strong>Favorite: </strong>
+    <a (click)="setFavorite(pokemon)" class="favorite-detail">
+      <fa [name]="'heart'" *ngIf="pokemon.favorite"></fa>
+      <fa [name]="'heart-o'" *ngIf="!pokemon.favorite"></fa>
+    </a>
+  </label>
+
+  <label>
+    <strong>Height:</strong>
+    {{pokemon.height}}
+  </label>
+
+  <label>
+    <strong>Weight:</strong>
+    {{pokemon.weight}}
+  </label>
+
+  <label>
+    <strong>Base Experience:</strong>
+    {{pokemon.baseExperience}}
+  </label>
+
+  <div class="row">
+    <div class="col-md-12">
+      <label>
+        <strong>Types:</strong>
+      </label>
+    </div>
+    <ul>
+      <li *ngFor="let type of pokemon.types"> {{type.name}}</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <label>
+        <strong>Abilities:</strong>
+      </label>
+    </div>
+    <ul>
+      <li *ngFor="let ability of pokemon.abilities"> {{ability.name}}</li>
+    </ul>
+  </div>
+
+</div>

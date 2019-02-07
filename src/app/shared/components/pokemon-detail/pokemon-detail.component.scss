@@ -1,0 +1,26 @@
+.card-detail{
+  margin: 0px 100px 0px 100px;
+  padding: 30px;
+  font-size: 16px;
+  box-shadow: -10px 13px 21px -8px rgba(0,0,0,0.41);
+  -webkit-box-shadow: -10px 13px 21px -8px rgba(0,0,0,0.41);
+  -moz-box-shadow: -10px 13px 21px -8px rgba(0,0,0,0.41);
+
+  .close {
+    fa {
+      float: right;
+      color: black;
+    }
+  }
+
+  .favorite-detail{
+    color: #ff7777;
+    cursor: pointer;
+  }
+
+  img {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px !important;
+  }
+}

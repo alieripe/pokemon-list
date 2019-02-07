@@ -1,0 +1,50 @@
+h1 {
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  font-size: 30px;
+}
+
+table {
+  font-size: 14px;
+  margin: 0px;
+
+  th {
+    p{
+      line-height: 50px;
+      margin: 0px;
+    }
+  }
+
+  .line-select {
+    background-color: #2b3c6196;
+    color: #fff;
+  }
+
+  tr {
+    height: 50px;
+
+    td {
+      cursor: pointer;
+
+      img {
+        width: 50px;
+      }
+      p{
+        line-height: 50px;
+        margin: 0px;
+      }
+
+      fa{
+        line-height: 50px;
+        margin: 0px;
+        color: #ff7777;
+      }
+    }
+  }
+}
+
+.spinner-border {
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+}
